@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--on below line we are creating a
+        vertical linear layout for our fabs.-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+<!--        on below line we are creating a add fab-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABelectricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_200"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_electrical_services_24"
+            android:visibility="gone"
+            app:backgroundTint="@color/purple_200"
+            app:tint="@color/white" />
+        
+        <TextView
+            android:id="@+id/FABelectricityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaringan Listrik"
+            app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_alarm_fab"
+            />
+
+
+        <!--on below line we are creating a home fab
+             and setting its visibility to gone-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_200"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_flag_24"
+            android:visibility="gone"
+            app:backgroundTint="@color/purple_200"
+            app:tint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_200"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            app:backgroundTint="@color/purple_200"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_200"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:visibility="gone"
+            app:backgroundTint="@color/purple_200"
+            app:tint="@color/white" />
+
+        <!--on below line we are creating a settings fab
+            and setting its visibility to gone-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FABall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_200"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/star"
+            android:visibility="gone"
+            app:backgroundTint="@color/purple_200"
+            app:tint="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
